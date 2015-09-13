@@ -1,0 +1,58 @@
+*** Settings ***
+Library    Selenium2Library
+Suite Setup    Go to login page
+Suite Teardown    Close All Browsers
+
+*** Variables ***
+${HOMEPAGE}    http://orders.noutoateria
+${BROWSER}    firefox
+${DASHBOARD}    http://orders.noutoateria/dashboard.php
+
+*** Test Cases ***
+Open login page Noutoateria for offices
+    Go to login page
+
+Invalid Credentials
+    [Template]    Login with invalid credentials should fail   
+    ${EMPTY}    ${EMPTY}
+    alapan527    ${EMPTY}
+    ${EMPTY}    abcd$1234
+    alapan527    jklsoe
+    ahsjdfmfk    abcd$1234
+
+Valid Login
+    Test Login    alapan527    abcd$1234    
+
+Test form to add items to catalog
+    Add Item To Catalog Form    food    new type of food    10    20
+
+
+*** Keywords ***
+Go to login page
+    Open Browser    ${HOMEPAGE}    ${BROWSER}
+
+Login with invalid credentials should fail
+    [Arguments]    ${username}    ${password}
+    Input Text    id=userName    ${username}
+    Input Text    id=passWord    ${password}
+    Click Button    Login
+    Page Should Contain    Password
+
+Test Login 
+    [Arguments]    ${username}    ${password}
+    Input Text    id=userName    ${username}
+    Input Text    id=passWord    ${password}
+    Click Button    Login
+    Page Should Contain    dashboard.php
+    Go To    ${DASHBOARD}
+
+Add Item To Catalog Form
+    [Arguments]    ${name}    ${description}    ${price}    ${quantity}
+    Click Element   link=Catalog
+    Click Element    id=showHideAddCatalogBtn
+    Input Text    id=itemName    ${name}
+    Input Text    id=itemDescription    ${description}  
+    Input Text    id=itemPrice    ${price}
+    Input Text    id=itemQuantity    ${quantity}
+    Click Element    id=addItemToDB
+    Wait Until Element Is Visible    id=itemAddedInfo
