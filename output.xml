@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20150913 21:34:58.996" generator="Robot 2.9.1 (Python 2.7.6 on linux2)">
+<robot generated="20150913 22:37:38.426" generator="Robot 2.9.1 (Python 2.7.6 on linux2)">
 <suite source="/home/alapan/Desktop/robot-tutorials/order_noutoateria.txt" id="s1" name="Order Noutoateria">
 <kw type="setup" name="Go to login page">
 <kw name="Open Browser" library="Selenium2Library">
@@ -8,10 +8,10 @@
 <arg>${HOMEPAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20150913 21:34:59.068" level="INFO">Opening browser 'firefox' to base url 'http://orders.noutoateria'</msg>
-<status status="PASS" endtime="20150913 21:35:03.176" starttime="20150913 21:34:59.067"></status>
+<msg timestamp="20150913 22:37:38.500" level="INFO">Opening browser 'firefox' to base url 'http://orders.noutoateria'</msg>
+<status status="PASS" endtime="20150913 22:37:42.574" starttime="20150913 22:37:38.499"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:03.177" starttime="20150913 21:34:59.066"></status>
+<status status="PASS" endtime="20150913 22:37:42.575" starttime="20150913 22:37:38.499"></status>
 </kw>
 <test id="s1-t1" name="Open login page Noutoateria for offices">
 <kw name="Go to login page">
@@ -21,12 +21,12 @@
 <arg>${HOMEPAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:03.181" level="INFO">Opening browser 'firefox' to base url 'http://orders.noutoateria'</msg>
-<status status="PASS" endtime="20150913 21:35:07.845" starttime="20150913 21:35:03.180"></status>
+<msg timestamp="20150913 22:37:42.579" level="INFO">Opening browser 'firefox' to base url 'http://orders.noutoateria'</msg>
+<status status="PASS" endtime="20150913 22:37:46.618" starttime="20150913 22:37:42.578"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:07.845" starttime="20150913 21:35:03.179"></status>
+<status status="PASS" endtime="20150913 22:37:46.618" starttime="20150913 22:37:42.577"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:07.845" critical="yes" starttime="20150913 21:35:03.177"></status>
+<status status="PASS" endtime="20150913 22:37:46.619" critical="yes" starttime="20150913 22:37:42.576"></status>
 </test>
 <test id="s1-t2" name="Invalid Credentials">
 <kw name="Login with invalid credentials should fail">
@@ -40,8 +40,8 @@
 <arg>id=userName</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:07.848" level="INFO">Typing text '' into text field 'id=userName'</msg>
-<status status="PASS" endtime="20150913 21:35:07.931" starttime="20150913 21:35:07.847"></status>
+<msg timestamp="20150913 22:37:46.621" level="INFO">Typing text '' into text field 'id=userName'</msg>
+<status status="PASS" endtime="20150913 22:37:46.778" starttime="20150913 22:37:46.621"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -49,26 +49,26 @@
 <arg>id=passWord</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:07.932" level="INFO">Typing text '' into text field 'id=passWord'</msg>
-<status status="PASS" endtime="20150913 21:35:07.973" starttime="20150913 21:35:07.931"></status>
+<msg timestamp="20150913 22:37:46.779" level="INFO">Typing text '' into text field 'id=passWord'</msg>
+<status status="PASS" endtime="20150913 22:37:46.843" starttime="20150913 22:37:46.778"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20150913 21:35:07.974" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20150913 21:35:08.051" starttime="20150913 21:35:07.973"></status>
+<msg timestamp="20150913 22:37:46.844" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20150913 22:37:46.973" starttime="20150913 22:37:46.843"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Password</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.068" level="INFO">Current page contains text 'Password'.</msg>
-<status status="PASS" endtime="20150913 21:35:08.068" starttime="20150913 21:35:08.052"></status>
+<msg timestamp="20150913 22:37:46.990" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" endtime="20150913 22:37:46.990" starttime="20150913 22:37:46.974"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:08.069" starttime="20150913 21:35:07.846"></status>
+<status status="PASS" endtime="20150913 22:37:46.990" starttime="20150913 22:37:46.620"></status>
 </kw>
 <kw name="Login with invalid credentials should fail">
 <arguments>
@@ -81,8 +81,8 @@
 <arg>id=userName</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.071" level="INFO">Typing text 'alapan527' into text field 'id=userName'</msg>
-<status status="PASS" endtime="20150913 21:35:08.129" starttime="20150913 21:35:08.071"></status>
+<msg timestamp="20150913 22:37:46.993" level="INFO">Typing text 'alapan527' into text field 'id=userName'</msg>
+<status status="PASS" endtime="20150913 22:37:47.050" starttime="20150913 22:37:46.993"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -90,26 +90,26 @@
 <arg>id=passWord</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.130" level="INFO">Typing text '' into text field 'id=passWord'</msg>
-<status status="PASS" endtime="20150913 21:35:08.167" starttime="20150913 21:35:08.129"></status>
+<msg timestamp="20150913 22:37:47.052" level="INFO">Typing text '' into text field 'id=passWord'</msg>
+<status status="PASS" endtime="20150913 22:37:47.096" starttime="20150913 22:37:47.051"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.167" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20150913 21:35:08.239" starttime="20150913 21:35:08.167"></status>
+<msg timestamp="20150913 22:37:47.097" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20150913 22:37:47.168" starttime="20150913 22:37:47.096"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Password</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.252" level="INFO">Current page contains text 'Password'.</msg>
-<status status="PASS" endtime="20150913 21:35:08.253" starttime="20150913 21:35:08.239"></status>
+<msg timestamp="20150913 22:37:47.181" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" endtime="20150913 22:37:47.181" starttime="20150913 22:37:47.168"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:08.253" starttime="20150913 21:35:08.069"></status>
+<status status="PASS" endtime="20150913 22:37:47.181" starttime="20150913 22:37:46.991"></status>
 </kw>
 <kw name="Login with invalid credentials should fail">
 <arguments>
@@ -122,8 +122,8 @@
 <arg>id=userName</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.255" level="INFO">Typing text '' into text field 'id=userName'</msg>
-<status status="PASS" endtime="20150913 21:35:08.298" starttime="20150913 21:35:08.254"></status>
+<msg timestamp="20150913 22:37:47.183" level="INFO">Typing text '' into text field 'id=userName'</msg>
+<status status="PASS" endtime="20150913 22:37:47.228" starttime="20150913 22:37:47.183"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -131,26 +131,26 @@
 <arg>id=passWord</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.299" level="INFO">Typing text 'abcd$1234' into text field 'id=passWord'</msg>
-<status status="PASS" endtime="20150913 21:35:08.348" starttime="20150913 21:35:08.298"></status>
+<msg timestamp="20150913 22:37:47.229" level="INFO">Typing text 'abcd$1234' into text field 'id=passWord'</msg>
+<status status="PASS" endtime="20150913 22:37:47.283" starttime="20150913 22:37:47.229"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.349" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20150913 21:35:08.420" starttime="20150913 21:35:08.348"></status>
+<msg timestamp="20150913 22:37:47.283" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20150913 22:37:47.355" starttime="20150913 22:37:47.283"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Password</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.433" level="INFO">Current page contains text 'Password'.</msg>
-<status status="PASS" endtime="20150913 21:35:08.433" starttime="20150913 21:35:08.420"></status>
+<msg timestamp="20150913 22:37:47.368" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" endtime="20150913 22:37:47.369" starttime="20150913 22:37:47.356"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:08.433" starttime="20150913 21:35:08.253"></status>
+<status status="PASS" endtime="20150913 22:37:47.369" starttime="20150913 22:37:47.182"></status>
 </kw>
 <kw name="Login with invalid credentials should fail">
 <arguments>
@@ -163,8 +163,8 @@
 <arg>id=userName</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.435" level="INFO">Typing text 'alapan527' into text field 'id=userName'</msg>
-<status status="PASS" endtime="20150913 21:35:08.495" starttime="20150913 21:35:08.434"></status>
+<msg timestamp="20150913 22:37:47.371" level="INFO">Typing text 'alapan527' into text field 'id=userName'</msg>
+<status status="PASS" endtime="20150913 22:37:47.421" starttime="20150913 22:37:47.370"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -172,26 +172,26 @@
 <arg>id=passWord</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.496" level="INFO">Typing text 'jklsoe' into text field 'id=passWord'</msg>
-<status status="PASS" endtime="20150913 21:35:08.550" starttime="20150913 21:35:08.495"></status>
+<msg timestamp="20150913 22:37:47.422" level="INFO">Typing text 'jklsoe' into text field 'id=passWord'</msg>
+<status status="PASS" endtime="20150913 22:37:47.478" starttime="20150913 22:37:47.422"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20150913 21:35:08.551" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20150913 21:35:09.321" starttime="20150913 21:35:08.550"></status>
+<msg timestamp="20150913 22:37:47.479" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20150913 22:37:48.121" starttime="20150913 22:37:47.479"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Password</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.338" level="INFO">Current page contains text 'Password'.</msg>
-<status status="PASS" endtime="20150913 21:35:09.338" starttime="20150913 21:35:09.321"></status>
+<msg timestamp="20150913 22:37:48.136" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" endtime="20150913 22:37:48.137" starttime="20150913 22:37:48.122"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:09.339" starttime="20150913 21:35:08.434"></status>
+<status status="PASS" endtime="20150913 22:37:48.137" starttime="20150913 22:37:47.369"></status>
 </kw>
 <kw name="Login with invalid credentials should fail">
 <arguments>
@@ -204,8 +204,8 @@
 <arg>id=userName</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.340" level="INFO">Typing text 'ahsjdfmfk' into text field 'id=userName'</msg>
-<status status="PASS" endtime="20150913 21:35:09.416" starttime="20150913 21:35:09.340"></status>
+<msg timestamp="20150913 22:37:48.138" level="INFO">Typing text 'ahsjdfmfk' into text field 'id=userName'</msg>
+<status status="PASS" endtime="20150913 22:37:48.199" starttime="20150913 22:37:48.138"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -213,28 +213,28 @@
 <arg>id=passWord</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.417" level="INFO">Typing text 'abcd$1234' into text field 'id=passWord'</msg>
-<status status="PASS" endtime="20150913 21:35:09.477" starttime="20150913 21:35:09.416"></status>
+<msg timestamp="20150913 22:37:48.200" level="INFO">Typing text 'abcd$1234' into text field 'id=passWord'</msg>
+<status status="PASS" endtime="20150913 22:37:48.278" starttime="20150913 22:37:48.199"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.478" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20150913 21:35:09.574" starttime="20150913 21:35:09.478"></status>
+<msg timestamp="20150913 22:37:48.279" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20150913 22:37:48.364" starttime="20150913 22:37:48.278"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Password</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.589" level="INFO">Current page contains text 'Password'.</msg>
-<status status="PASS" endtime="20150913 21:35:09.589" starttime="20150913 21:35:09.575"></status>
+<msg timestamp="20150913 22:37:48.382" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" endtime="20150913 22:37:48.383" starttime="20150913 22:37:48.365"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:09.590" starttime="20150913 21:35:09.339"></status>
+<status status="PASS" endtime="20150913 22:37:48.383" starttime="20150913 22:37:48.137"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:09.590" critical="yes" starttime="20150913 21:35:07.846"></status>
+<status status="PASS" endtime="20150913 22:37:48.383" critical="yes" starttime="20150913 22:37:46.619"></status>
 </test>
 <test id="s1-t3" name="Valid Login">
 <kw name="Test Login">
@@ -248,8 +248,8 @@
 <arg>id=userName</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.593" level="INFO">Typing text 'alapan527' into text field 'id=userName'</msg>
-<status status="PASS" endtime="20150913 21:35:09.662" starttime="20150913 21:35:09.592"></status>
+<msg timestamp="20150913 22:37:48.386" level="INFO">Typing text 'alapan527' into text field 'id=userName'</msg>
+<status status="PASS" endtime="20150913 22:37:48.454" starttime="20150913 22:37:48.386"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -257,36 +257,36 @@
 <arg>id=passWord</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.664" level="INFO">Typing text 'abcd$1234' into text field 'id=passWord'</msg>
-<status status="PASS" endtime="20150913 21:35:09.738" starttime="20150913 21:35:09.663"></status>
+<msg timestamp="20150913 22:37:48.455" level="INFO">Typing text 'abcd$1234' into text field 'id=passWord'</msg>
+<status status="PASS" endtime="20150913 22:37:48.531" starttime="20150913 22:37:48.455"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>Login</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.739" level="INFO">Clicking button 'Login'.</msg>
-<status status="PASS" endtime="20150913 21:35:09.838" starttime="20150913 21:35:09.739"></status>
+<msg timestamp="20150913 22:37:48.532" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" endtime="20150913 22:37:48.620" starttime="20150913 22:37:48.532"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>dashboard.php</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.872" level="INFO">Current page contains text 'dashboard.php'.</msg>
-<status status="PASS" endtime="20150913 21:35:09.872" starttime="20150913 21:35:09.839"></status>
+<msg timestamp="20150913 22:37:48.639" level="INFO">Current page contains text 'dashboard.php'.</msg>
+<status status="PASS" endtime="20150913 22:37:48.639" starttime="20150913 22:37:48.621"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>${DASHBOARD}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:09.873" level="INFO">Opening url 'http://orders.noutoateria/dashboard.php'</msg>
-<status status="PASS" endtime="20150913 21:35:10.318" starttime="20150913 21:35:09.873"></status>
+<msg timestamp="20150913 22:37:48.640" level="INFO">Opening url 'http://orders.noutoateria/dashboard.php'</msg>
+<status status="PASS" endtime="20150913 22:37:49.106" starttime="20150913 22:37:48.640"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:10.319" starttime="20150913 21:35:09.591"></status>
+<status status="PASS" endtime="20150913 22:37:49.107" starttime="20150913 22:37:48.385"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:10.320" critical="yes" starttime="20150913 21:35:09.590"></status>
+<status status="PASS" endtime="20150913 22:37:49.107" critical="yes" starttime="20150913 22:37:48.384"></status>
 </test>
 <test id="s1-t4" name="Test form to add items to catalog">
 <kw name="Add Item To Catalog Form">
@@ -301,16 +301,16 @@
 <arguments>
 <arg>link=Catalog</arg>
 </arguments>
-<msg timestamp="20150913 21:35:10.323" level="INFO">Clicking element 'link=Catalog'.</msg>
-<status status="PASS" endtime="20150913 21:35:10.743" starttime="20150913 21:35:10.323"></status>
+<msg timestamp="20150913 22:37:49.113" level="INFO">Clicking element 'link=Catalog'.</msg>
+<status status="PASS" endtime="20150913 22:37:49.613" starttime="20150913 22:37:49.112"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>id=showHideAddCatalogBtn</arg>
 </arguments>
-<msg timestamp="20150913 21:35:10.744" level="INFO">Clicking element 'id=showHideAddCatalogBtn'.</msg>
-<status status="PASS" endtime="20150913 21:35:10.806" starttime="20150913 21:35:10.743"></status>
+<msg timestamp="20150913 22:37:49.614" level="INFO">Clicking element 'id=showHideAddCatalogBtn'.</msg>
+<status status="PASS" endtime="20150913 22:37:49.677" starttime="20150913 22:37:49.614"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -318,8 +318,8 @@
 <arg>id=itemName</arg>
 <arg>${name}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:10.807" level="INFO">Typing text 'food' into text field 'id=itemName'</msg>
-<status status="PASS" endtime="20150913 21:35:10.848" starttime="20150913 21:35:10.806"></status>
+<msg timestamp="20150913 22:37:49.678" level="INFO">Typing text 'food' into text field 'id=itemName'</msg>
+<status status="PASS" endtime="20150913 22:37:49.726" starttime="20150913 22:37:49.677"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -327,8 +327,8 @@
 <arg>id=itemDescription</arg>
 <arg>${description}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:10.849" level="INFO">Typing text 'new type of food' into text field 'id=itemDescription'</msg>
-<status status="PASS" endtime="20150913 21:35:10.923" starttime="20150913 21:35:10.848"></status>
+<msg timestamp="20150913 22:37:49.728" level="INFO">Typing text 'new type of food' into text field 'id=itemDescription'</msg>
+<status status="PASS" endtime="20150913 22:37:49.798" starttime="20150913 22:37:49.727"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -336,8 +336,8 @@
 <arg>id=itemPrice</arg>
 <arg>${price}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:10.924" level="INFO">Typing text '10' into text field 'id=itemPrice'</msg>
-<status status="PASS" endtime="20150913 21:35:10.974" starttime="20150913 21:35:10.923"></status>
+<msg timestamp="20150913 22:37:49.799" level="INFO">Typing text '10' into text field 'id=itemPrice'</msg>
+<status status="PASS" endtime="20150913 22:37:49.853" starttime="20150913 22:37:49.799"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -345,43 +345,95 @@
 <arg>id=itemQuantity</arg>
 <arg>${quantity}</arg>
 </arguments>
-<msg timestamp="20150913 21:35:10.975" level="INFO">Typing text '20' into text field 'id=itemQuantity'</msg>
-<status status="PASS" endtime="20150913 21:35:11.030" starttime="20150913 21:35:10.974"></status>
+<msg timestamp="20150913 22:37:49.854" level="INFO">Typing text '20' into text field 'id=itemQuantity'</msg>
+<status status="PASS" endtime="20150913 22:37:49.903" starttime="20150913 22:37:49.853"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>id=addItemToDB</arg>
 </arguments>
-<msg timestamp="20150913 21:35:11.031" level="INFO">Clicking element 'id=addItemToDB'.</msg>
-<status status="PASS" endtime="20150913 21:35:11.104" starttime="20150913 21:35:11.030"></status>
+<msg timestamp="20150913 22:37:49.904" level="INFO">Clicking element 'id=addItemToDB'.</msg>
+<status status="PASS" endtime="20150913 22:37:50.006" starttime="20150913 22:37:49.904"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>id=itemAddedInfo</arg>
 </arguments>
-<status status="PASS" endtime="20150913 21:35:11.334" starttime="20150913 21:35:11.104"></status>
+<status status="PASS" endtime="20150913 22:37:50.022" starttime="20150913 22:37:50.006"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:11.335" starttime="20150913 21:35:10.322"></status>
+<status status="PASS" endtime="20150913 22:37:50.022" starttime="20150913 22:37:49.110"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:11.335" critical="yes" starttime="20150913 21:35:10.320"></status>
+<status status="PASS" endtime="20150913 22:37:50.023" critical="yes" starttime="20150913 22:37:49.108"></status>
+</test>
+<test id="s1-t5" name="Test fetch catalog">
+<kw name="Fetch Catalog">
+<arguments>
+<arg>food</arg>
+<arg>new type of food</arg>
+<arg>10</arg>
+<arg>20</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=fetchCatalog</arg>
+</arguments>
+<msg timestamp="20150913 22:37:50.025" level="INFO">Clicking element 'id=fetchCatalog'.</msg>
+<status status="PASS" endtime="20150913 22:37:50.248" starttime="20150913 22:37:50.025"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20150913 22:37:50.305" level="INFO">Current page contains text 'food'.</msg>
+<status status="PASS" endtime="20150913 22:37:50.305" starttime="20150913 22:37:50.249"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${description}</arg>
+</arguments>
+<msg timestamp="20150913 22:37:50.337" level="INFO">Current page contains text 'new type of food'.</msg>
+<status status="PASS" endtime="20150913 22:37:50.338" starttime="20150913 22:37:50.306"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${price}</arg>
+</arguments>
+<msg timestamp="20150913 22:37:50.370" level="INFO">Current page contains text '10'.</msg>
+<status status="PASS" endtime="20150913 22:37:50.371" starttime="20150913 22:37:50.338"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${quantity}</arg>
+</arguments>
+<msg timestamp="20150913 22:37:50.398" level="INFO">Current page contains text '20'.</msg>
+<status status="PASS" endtime="20150913 22:37:50.398" starttime="20150913 22:37:50.371"></status>
+</kw>
+<status status="PASS" endtime="20150913 22:37:50.399" starttime="20150913 22:37:50.024"></status>
+</kw>
+<status status="PASS" endtime="20150913 22:37:50.399" critical="yes" starttime="20150913 22:37:50.023"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20150913 21:35:11.395" starttime="20150913 21:35:11.336"></status>
+<status status="PASS" endtime="20150913 22:37:50.456" starttime="20150913 22:37:50.400"></status>
 </kw>
-<status status="PASS" endtime="20150913 21:35:11.395" starttime="20150913 21:34:58.996"></status>
+<status status="PASS" endtime="20150913 22:37:50.456" starttime="20150913 22:37:38.427"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="4">Critical Tests</stat>
-<stat fail="0" pass="4">All Tests</stat>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Order Noutoateria" pass="4">Order Noutoateria</stat>
+<stat fail="0" id="s1" name="Order Noutoateria" pass="5">Order Noutoateria</stat>
 </suite>
 </statistics>
 <errors>

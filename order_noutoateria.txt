@@ -26,6 +26,9 @@ Valid Login
 Test form to add items to catalog
     Add Item To Catalog Form    food    new type of food    10    20
 
+Test fetch catalog
+    Fetch Catalog    food    new type of food    10    20
+
 
 *** Keywords ***
 Go to login page
@@ -56,3 +59,15 @@ Add Item To Catalog Form
     Input Text    id=itemQuantity    ${quantity}
     Click Element    id=addItemToDB
     Wait Until Element Is Visible    id=itemAddedInfo
+
+Fetch Catalog
+    [Arguments]    ${name}    ${description}    ${price}    ${quantity}
+    Click Element    id=fetchCatalog
+    Page Should Contain    ${name}
+    Page Should Contain    ${description}
+    Page Should Contain    ${price}
+    Page Should Contain    ${quantity}
+
+View Queue In Settings
+    Select From List    xpath=//a[@class="dropdown-toggle"]    Settings
+    Page Should Contain    Order and feedback settings
